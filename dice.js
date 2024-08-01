@@ -5,7 +5,7 @@ window.onload=()=>{
     let fig = document.querySelector(".fig")
  let rollBtn = document.querySelector(".roll")
     
-    
+    let rvalue = document.querySelector(".rvalue")
     
             rollBtn.addEventListener("click",()=>{
          
@@ -13,10 +13,11 @@ window.onload=()=>{
     fig.innerHTML = randomNum 
     dicePointer.style.left = `${randomNum}%`
     
+    rvalue.innerHTML = range.value
     if(range.value < randomNum){
-        console.log("you lose")
-    }else{
         console.log("you win")
+    }else{
+        console.log("you lose")
     }
     })
   
