@@ -4,8 +4,16 @@ window.onload=()=>{
   let range = document.querySelector(".range")
     let fig = document.querySelector(".fig")
  let rollBtn = document.querySelector(".roll")
+ let amount = document.querySelector(".amount")
     
     let rvalue = document.querySelector(".rvalue")
+    
+    
+    function loadAmnt(){
+       return amount.innerHTML = 100
+        
+    }
+    loadAmnt()
     
             rollBtn.addEventListener("click",()=>{
          
