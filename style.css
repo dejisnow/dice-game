@@ -1,11 +1,13 @@
 body {
-    
+    background-color:#eaf8aa;
 }
 .diceDiv{
     position:relative ;
-    height:300px;
+    height:400px;
     padding:10px;
     background-color:#aae8aa;
+    display:flex;
+    flex-direction:row;
 }
 .dicePointer{
     width:10px;
@@ -31,5 +33,30 @@ button{
     
 
 }
+.rangeDiv{
+    position:absolute;
+    top:40%;
+    left:5%;
+}
+.rangeDiv input{
+    width:300px;
+}
+.betDiv{
+    position:absolute;
+    top:60%;
+    left:23%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center ;
+    
+}
+.betDiv input{
+    height:20px;
+}
+p{
+    text-align:center;
+}
+
 
 
