@@ -7,7 +7,15 @@ window.onload=()=>{
  let amount = document.querySelector(".amount")
     
     let rvalue = document.querySelector(".rvalue")
+    let val = 100
     
+    
+    function checkAmt(){
+        if( val > input.value){
+            amount.innerHTML = val-= input.value
+        }
+        
+    }
     
     function loadAmnt(){
        return amount.innerHTML = 100
@@ -16,7 +24,7 @@ window.onload=()=>{
     loadAmnt()
     
             rollBtn.addEventListener("click",()=>{
-         
+         checkAmt()
     let randomNum = Math.floor(Math.random() * 100) 
     fig.innerHTML = randomNum 
     dicePointer.style.left = `${randomNum}%`
