@@ -7,12 +7,13 @@ window.onload=()=>{
  let amount = document.querySelector(".amount")
     
     let rvalue = document.querySelector(".rvalue")
+    let betInput = document.querySelector(".betInput");
     let val = 100
     
     
     function checkAmt(){
-        if( val > input.value){
-            amount.innerHTML = val-= input.value
+        if( val > betInput.value){
+            amount.innerHTML = val-= betInput.value
         }
         
     }
